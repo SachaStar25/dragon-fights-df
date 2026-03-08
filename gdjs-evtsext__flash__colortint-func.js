@@ -1,44 +1,56 @@
 
-if (typeof gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents !== "undefined") {
-  gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__Flash__ColorTint !== "undefined") {
+  gdjs.evtsExt__Flash__ColorTint.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents = {};
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.idToCallbackMap = new Map();
+gdjs.evtsExt__Flash__ColorTint = {};
+gdjs.evtsExt__Flash__ColorTint.idToCallbackMap = new Map();
+gdjs.evtsExt__Flash__ColorTint.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0x1ac04a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Flash__ColorTint.userFunc0x1224ef8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
-
-// See doStepPostEvents
-runtimeScene.__particleEmmiter3DExtension = runtimeScene.__particleEmmiter3DExtension || {};
-runtimeScene.__particleEmmiter3DExtension.emittersStepped = 0;
+/** @type {gdjs.SpriteRuntimeObject} */
+const tintedObject = objects[0];
+const tint = tintedObject.getColor();
+eventsFunctionContext.returnValue = tint;
 };
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Flash__ColorTint.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0x1ac04a0(runtimeScene, eventsFunctionContext);
+
+}
+
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__ColorTint.GDObjectObjects1);
+
+const objects = gdjs.evtsExt__Flash__ColorTint.GDObjectObjects1;
+gdjs.evtsExt__Flash__ColorTint.userFunc0x1224ef8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
 
 };
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__Flash__ColorTint.func = function(runtimeScene, Object, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
+"Object": Object
 },
   _objectArraysMap: {
+"Object": gdjs.objectsListsToArray(Object)
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ParticleEmitter3D"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ParticleEmitter3D"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Flash"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Flash"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -83,15 +95,13 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
+gdjs.evtsExt__Flash__ColorTint.GDObjectObjects1.length = 0;
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Flash__ColorTint.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Flash__ColorTint.GDObjectObjects1.length = 0;
 
 
-return;
+return "" + eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks = [];
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks.push((runtimeScene) => {
-    gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.func(runtimeScene, runtimeScene);
-})
-gdjs.registerRuntimeScenePreEventsCallback(gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks[gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks.length - 1]);
+gdjs.evtsExt__Flash__ColorTint.registeredGdjsCallbacks = [];

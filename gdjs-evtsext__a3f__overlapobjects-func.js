@@ -23,7 +23,7 @@ gdjs.evtsExt__A3F__OverlapObjects.GDObject3DObjects2= [];
 gdjs.evtsExt__A3F__OverlapObjects.GDObject3DObjects3= [];
 
 
-gdjs.evtsExt__A3F__OverlapObjects.userFunc0x113c610 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__OverlapObjects.userFunc0x11ab400 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const AnyObject = objects[0];
 const Hide = eventsFunctionContext.getArgument("Hide");
@@ -80,7 +80,7 @@ gdjs.copyArray(gdjs.evtsExt__A3F__OverlapObjects.GDAnyObjectObjects2, gdjs.evtsE
 
 
 const objects = gdjs.evtsExt__A3F__OverlapObjects.GDAnyObjectObjects3;
-gdjs.evtsExt__A3F__OverlapObjects.userFunc0x113c610(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__OverlapObjects.userFunc0x11ab400(runtimeScene, objects, eventsFunctionContext);
 
 }
 

@@ -1,44 +1,48 @@
 
-if (typeof gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents !== "undefined") {
-  gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__Flash__IsTinted !== "undefined") {
+  gdjs.evtsExt__Flash__IsTinted.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents = {};
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.idToCallbackMap = new Map();
+gdjs.evtsExt__Flash__IsTinted = {};
+gdjs.evtsExt__Flash__IsTinted.idToCallbackMap = new Map();
+gdjs.evtsExt__Flash__IsTinted.GDObjectObjects1= [];
+gdjs.evtsExt__Flash__IsTinted.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0x1ac04a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
-"use strict";
-
-// See doStepPostEvents
-runtimeScene.__particleEmmiter3DExtension = runtimeScene.__particleEmmiter3DExtension || {};
-runtimeScene.__particleEmmiter3DExtension.emittersStepped = 0;
-};
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Flash__IsTinted.mapOfGDgdjs_9546evtsExt_9595_9595Flash_9595_9595IsTinted_9546GDObjectObjects1Objects = Hashtable.newFrom({"Object": gdjs.evtsExt__Flash__IsTinted.GDObjectObjects1});
+gdjs.evtsExt__Flash__IsTinted.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Flash__IsTinted.GDObjectObjects1);
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.userFunc0x1ac04a0(runtimeScene, eventsFunctionContext);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__Flash__ColorTint.func(runtimeScene, gdjs.evtsExt__Flash__IsTinted.mapOfGDgdjs_9546evtsExt_9595_9595Flash_9595_9595IsTinted_9546GDObjectObjects1Objects, eventsFunctionContext) == "255;255;255");
+if (isConditionTrue_0) {
+{eventsFunctionContext.returnValue = true;}
+}
 
 }
 
 
 };
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__Flash__IsTinted.func = function(runtimeScene, Object, parentEventsFunctionContext) {
 let scopeInstanceContainer = null;
 var eventsFunctionContext = {
   _objectsMap: {
+"Object": Object
 },
   _objectArraysMap: {
+"Object": gdjs.objectsListsToArray(Object)
 },
   _behaviorNamesMap: {
 },
-  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ParticleEmitter3D"),
-  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ParticleEmitter3D"),
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Flash"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Flash"),
   localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
@@ -83,15 +87,15 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
+gdjs.evtsExt__Flash__IsTinted.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Flash__IsTinted.GDObjectObjects2.length = 0;
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Flash__IsTinted.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__Flash__IsTinted.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Flash__IsTinted.GDObjectObjects2.length = 0;
 
 
-return;
+return "" + eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks = [];
-gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks.push((runtimeScene) => {
-    gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.func(runtimeScene, runtimeScene);
-})
-gdjs.registerRuntimeScenePreEventsCallback(gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks[gdjs.evtsExt__ParticleEmitter3D__onScenePreEvents.registeredGdjsCallbacks.length - 1]);
+gdjs.evtsExt__Flash__IsTinted.registeredGdjsCallbacks = [];

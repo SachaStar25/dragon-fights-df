@@ -11,7 +11,7 @@ gdjs.evtsExt__Collision3D__SqDistance.GDObjectObjects1= [];
 gdjs.evtsExt__Collision3D__SqDistance.GDOtherObjectObjects1= [];
 
 
-gdjs.evtsExt__Collision3D__SqDistance.userFunc0x14f89e8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Collision3D__SqDistance.userFunc0xbf8c48 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 const otherObjects = eventsFunctionContext.getObjectsLists("OtherObject");
@@ -31,7 +31,7 @@ gdjs.evtsExt__Collision3D__SqDistance.eventsList0 = function(runtimeScene, event
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Collision3D__SqDistance.GDObjectObjects1);
 
 const objects = gdjs.evtsExt__Collision3D__SqDistance.GDObjectObjects1;
-gdjs.evtsExt__Collision3D__SqDistance.userFunc0x14f89e8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__Collision3D__SqDistance.userFunc0xbf8c48(runtimeScene, objects, eventsFunctionContext);
 
 }
 

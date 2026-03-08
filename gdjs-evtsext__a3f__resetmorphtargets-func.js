@@ -20,7 +20,7 @@ gdjs.evtsExt__A3F__ResetMorphTargets.GDObjectObjects2= [];
 gdjs.evtsExt__A3F__ResetMorphTargets.GDObjectObjects3= [];
 
 
-gdjs.evtsExt__A3F__ResetMorphTargets.userFunc0x28f4af8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__ResetMorphTargets.userFunc0x8e8488 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Object3D = objects[0].get3DRendererObject();
 const TargetName = eventsFunctionContext.getArgument("TargetName");
@@ -39,7 +39,7 @@ gdjs.copyArray(gdjs.evtsExt__A3F__ResetMorphTargets.GDObjectObjects2, gdjs.evtsE
 
 
 const objects = gdjs.evtsExt__A3F__ResetMorphTargets.GDObjectObjects3;
-gdjs.evtsExt__A3F__ResetMorphTargets.userFunc0x28f4af8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__ResetMorphTargets.userFunc0x8e8488(runtimeScene, objects, eventsFunctionContext);
 
 }
 

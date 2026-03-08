@@ -23,7 +23,7 @@ gdjs.evtsExt__A3F__LerpTowardChild.GDTargetObjects2= [];
 gdjs.evtsExt__A3F__LerpTowardChild.GDTargetObjects3= [];
 
 
-gdjs.evtsExt__A3F__LerpTowardChild.userFunc0xbb6f78 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__LerpTowardChild.userFunc0x969268 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Object2D = objects[0];
 const Object3D = Object2D.get3DRendererObject();
@@ -81,7 +81,7 @@ gdjs.copyArray(gdjs.evtsExt__A3F__LerpTowardChild.GDObjectObjects2, gdjs.evtsExt
 
 
 const objects = gdjs.evtsExt__A3F__LerpTowardChild.GDObjectObjects3;
-gdjs.evtsExt__A3F__LerpTowardChild.userFunc0xbb6f78(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__LerpTowardChild.userFunc0x969268(runtimeScene, objects, eventsFunctionContext);
 
 }
 

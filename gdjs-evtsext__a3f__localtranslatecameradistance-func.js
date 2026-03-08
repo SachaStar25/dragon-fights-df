@@ -9,7 +9,7 @@ gdjs.evtsExt__A3F__LocalTranslateCameraDistance = {};
 gdjs.evtsExt__A3F__LocalTranslateCameraDistance.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__A3F__LocalTranslateCameraDistance.userFunc0xa3ebc8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__A3F__LocalTranslateCameraDistance.userFunc0xa99ab8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const Axis = eventsFunctionContext.getArgument("Axis");
 const Distance = eventsFunctionContext.getArgument("Distance");
@@ -38,7 +38,7 @@ gdjs.evtsExt__A3F__LocalTranslateCameraDistance.eventsList0 = function(runtimeSc
 
 
 const objects = [];
-gdjs.evtsExt__A3F__LocalTranslateCameraDistance.userFunc0xa3ebc8(runtimeScene, objects, eventsFunctionContext);
+gdjs.evtsExt__A3F__LocalTranslateCameraDistance.userFunc0xa99ab8(runtimeScene, objects, eventsFunctionContext);
 
 }
 
